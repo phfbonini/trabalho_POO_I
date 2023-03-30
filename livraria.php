@@ -68,5 +68,19 @@ class Livro {
         return round($this-> preco * (1 - $this->desconto / 100),2);
         
     }
+
+    public function exibirDetalhes() {
+        echo "-------------------------- <br>";
+        echo "Título: {$this->titulo}<br>";
+        echo "Autor: {$this->autor}<br>";
+        echo "Editora: {$this->editora}<br>";
+        echo "Preço: {$this->preco}<br>";
+        echo "Desconto: {$this->desconto}%<br>";
+        echo "Preço com desconto: " . $this->calcularPrecoComDesconto() . "<br>";
+        echo "Estoque: {$this->estoque}<br>";
+        echo "<br>";
+        echo "-------------------------- <br>";
+    }
+    
 }
 ?>
