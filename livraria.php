@@ -6,7 +6,7 @@ class Livro {
     private $preco;
     private $desconto;
     private $estoque;
-    
+
     public function __construct($titulo, $autor, $editora, $preco, $desconto, $estoque) {
         $this->titulo = $titulo;
         $this->autor = $autor;
@@ -62,6 +62,11 @@ class Livro {
 
     public function setEstoque($estoque) {
         $this->estoque = $estoque;
+    }
+
+    public function calcularPrecoComDesconto() {
+        return round($this-> preco * (1 - $this->desconto / 100),2);
+        
     }
 }
 ?>
