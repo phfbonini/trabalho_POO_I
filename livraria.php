@@ -6,6 +6,15 @@ class Livro {
     private $preco;
     private $desconto;
     private $estoque;
+    
+    public function __construct($titulo, $autor, $editora, $preco, $desconto, $estoque) {
+        $this->titulo = $titulo;
+        $this->autor = $autor;
+        $this->editora = $editora;
+        $this->preco = $preco;
+        $this->desconto = $desconto;
+        $this->estoque = $estoque;
+    }
 
     public function getTitulo() {
         return $this->titulo;
