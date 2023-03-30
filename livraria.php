@@ -81,6 +81,11 @@ class Livro {
         echo "<br>";
         echo "-------------------------- <br>";
     }
-    
+
 }
+
+$livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", "HarperCollins", 29.99, 10, 50);
+$livro2 = new Livro("1984", "George Orwell", "Penguin Books", 15.99, 5, 30);
+$livro3 = new Livro("Orgulho e Preconceito", "Jane Austen", "Vintage Classics", 12.99, 15, 20);
+
 ?>
