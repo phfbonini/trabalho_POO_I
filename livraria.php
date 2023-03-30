@@ -88,4 +88,29 @@ $livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", "HarperCollins", 29
 $livro2 = new Livro("1984", "George Orwell", "Penguin Books", 15.99, 5, 30);
 $livro3 = new Livro("Orgulho e Preconceito", "Jane Austen", "Vintage Classics", 12.99, 15, 20);
 
+echo "DETALHES DOS LIVROS I ---------<br>";
+$livro1->exibirDetalhes();
+$livro2->exibirDetalhes();
+$livro3->exibirDetalhes();
+
+$livro1->setTitulo("Os Hobbits");
+$livro2->setPreco(16.99);
+$livro3->setEditora("Penguin Books");
+
+echo "DETALHES DOS LIVROS II ---------<br>";
+$livro1->exibirDetalhes();
+$livro2->exibirDetalhes();
+$livro3->exibirDetalhes();
+
+$livro1->setDesconto(20);
+$livro3->setDesconto(10);
+
+echo "DETALHES DOS LIVROS III ---------<br>";
+$livro1->exibirDetalhes();
+$livro2->exibirDetalhes();
+$livro3->exibirDetalhes();
+echo "-------------------------- <br>";
+echo "Desenvolvido por Pedro Bonini RA 22.6628-6";
+
+
 ?>
